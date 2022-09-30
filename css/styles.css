@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+:root {
+  --color-bg: #f1e0c5;
+  --color-text: #342a21;
+ 
+}
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: var(--color-bg);
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+a.text:active, 
+a.text:hover,  
+a.text {
+  text-decoration: none;
+  color: #342a21;
+}
+
+h1 {
+  font-size: 50px;
+  color: var(--color-text);
+}
+.menu {
+  position: relative;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+
+.sub_menu {
+  display: block;
+  padding: 8px 16px;
+  color: var(--color-text);
+}
+.reg {
+  
+  position: absolute;
+  right: 5px;
+  top: -20px;
+  margin-top: 0px;
+  padding-right: 0px;
+  text-align: right;
+}
+.banner_text {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.circle_angle {
+  border-radius: 0px 0px 10px 10px;
+  border: 4px solid #88590f;
+}
+
+.circle_angle:hover {
+  border-radius: 0px 0px 10px 10px;
+  border: 4px solid #a5772e;
+  
+}
+
+
+
+
+
+ul 
+{
+/* Убираем маркеры у списка */
+list-style: none;
+/* Делаем элементы блочными */
+display: block;
+/* Убираем отступы */
+margin: 0px;
+padding: 0px;
+/* Задаём ширину блока */
+width: 100%;
+}
+
+    ul:after 
+    {
+        /* Делаем элементы блочными */
+        display: block;
+        /* Убираем выравнивание */
+        float: none;
+content: ' ';
+/* Отменяем обтекание элемента одновременно с правого и левого края */
+clear: both;
+    }
+
+ul.menu > li
+ {
+     /* Задаём выравнивание и позиционирование */
+ float: left;
+ /* Считаем координаты относительно исходного места */
+ position: relative;
+ /* Задаём ширину элемента */
+ width: 33%;
+                
+}
+ul.menu > li > a 
+{
+/* Делаем элементы блочными */
+display: block;
+/* Задаем белый цвет */
+color: #fff;
+/* Задаем отступ */
+padding: 10px;
+/* Убираем форматирование */
+text-decoration: none;
+/* Задаем цвет заднего фона */
+background-color: #88590f;
+/* Выравниваем текст по центру */
+text-align: center;
+}
+
+ul.menu > li > a:hover 
+{
+    /* Задаем цвет заднего фона при наведении */
+    background-color: #a5772e;
+    
+    
+}
+
+ul.sub_menu 
+{
+    /* Элемент абсолютно позиционирован */
+    position: absolute;
+    /* Определяем расстояние от верхнего и левого края родительского элемента до верхнего края дочернего элемента */
+    top: 36px;
+    left: -16px;
+    /* Делаем подменю скрытыми */
+    display: none;
+    /* Выравниваем текст по центру */
+    text-align: center;
+}
+
+ul.sub_menu > li 
+{
+    /* Блочное расположение элементов */
+    display: block;
+    
+}
+
+ul.sub_menu > li > a 
+{
+    /* Делаем элементы блочными */
+    display: block;
+    /* Убираем форматирование */
+    text-decoration: none;
+    /* Задаем отступ */
+    padding: 10px;
+    /* Задаем цвет */
+    color: #ffffff;
+    /* Задаем цвет заднего фона */
+    background-color: #88590f;
+    
+}
+
+ul.sub_menu > li > a:hover 
+{
+    /* Цвет заднего фона при наведении */
+    background-color: #a5772e;
+    /* Убираем подчеркивание при наведении */
+    text-decoration: none;
+}
+    
+ul.menu > li:hover > ul.sub_menu {
+    /* Делаем элементы блочными */
+    display: block;
+    }
